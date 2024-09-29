@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reservation</title>
+    <link rel="stylesheet" href="../css/styleRese.css">
+</head>
+<body>
+    <div class="navbar">
+        <div class="navlogo">
+            <a href="Main.html"><img src="Logo.png" alt="logo"></a>
+        </div>
+        <div class="navhome">
+            <a href="Main.html">Home</a>
+        </div>
+        <div class="navabout">
+            <a href="AboutUs.html">About Us</a>
+        </div>
+        <div class="navroom">
+            <a href="Roomm.html">Our Rooms</a>
+        </div>
+        <div class="navfacilities">
+            <a href="Facilities.html">Our Facilities</a>
+        </div>
+        <div class="navreservation">
+            <a href="Reservation.html">Reservation</a>
+        </div>
+    </div>
+
+    <div class="baratas">
+        <p>
+           Reservation
+        </p>
+    </div>
+
+    <div class="content">
+        <div id="box">
+            <div class="title"><p>PERSONAL INFORMATION</p></div>
+            <form name="inform" id="regist" action="Main.html" onsubmit="validate(event)">
+                <div class="isi">
+                <div class="formkiri">
+                    <div class="boxform"><label for="">Full Name:</label></div>
+                    <div class="boxform"><label for="">Phone Number:</label></div>
+                    <div class="boxform"><label for="">Email Address:</label></div>
+                    <div class="boxform"><label for="">Check In & Out Date:</label></div>
+                    <div class="boxform"><label for="">Number Of Passanger:</label></div>
+                    <div class="boxform"><label for="">Room Type:</label></div>
+                    <div class="boxform"><label for="">Payment Method:</label></div>
+                </div>
+
+                <div class="formkanan">
+                    <div class="boxform"><input type="text" name="NameBox" id="input-name" style="font-size: 16pt;"></div>
+                    <div class="boxform"><input type="number" name="number" id="input-number"></div>
+                    <div class="boxform"><input type="text" name="Address" id="input-email"></div>
+                    <div class="boxform"><input type="date" name="" id="input-indate"><input type="date" name="" id="input-outdate"></div>
+                    <div class="boxform"><input type="number" name="" id="input-passanger"></div>
+                    <div class="boxform">
+                        <select name="" id="input-type">
+                            <option value="">Select Room</option>
+                            <option value="Regular">Regular Room</option>
+                            <option value="Business">Business Room</option>
+                            <option value="Luxury">Luxury Room</option>
+                        </select></div>
+                    <div class="boxform">
+                        <select name="" id="input-method">
+                            <option value="">Select Payment Method</option>
+                            <option value="Debit">Debit Card</option>
+                            <option value="Kredit">Kredit Card</option>
+                            <option value="Cash">Cash</option>
+                            <option value="Transfer">Bank Transfer</option>
+                            <option value="Online">Online Payment Platforms</option>
+                        </select>
+                    </div>
+                </div> 
+            </div>
+                    <div class="button"><button type="submit">Finish Reservation</button></div>
+            </form>
+
+
+        </div>
+        <p id="error-message"></p>
+    </div>
+</body>
+<script src="../js/script.js"></script>
+</html>
